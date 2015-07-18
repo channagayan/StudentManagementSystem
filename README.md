@@ -1,6 +1,5 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Project Name}
+
+# Project Name
 
 This is a simple student management system created with spring framework,javascript,
 MongoDB etc.
@@ -16,6 +15,3 @@ MongoDB etc.
 7. Start MongoDB in default settings (in default port) (you can set mongodb properties in src/main/webapp/resources/database.properties file)
 7. If everything's ok, you can access web application via "localhost:8080/students" in your browser
 
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
