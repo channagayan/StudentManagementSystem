@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-# ${1:Student Management System}
+# ${1:Project Name}
 
 This is a simple student management system created with spring framework,javascript,
 MongoDB etc.
