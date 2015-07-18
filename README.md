@@ -1,5 +1,5 @@
 
-# Project Name
+# Student Management System
 
 This is a simple student management system created with spring framework,javascript,
 MongoDB etc.
@@ -13,5 +13,7 @@ MongoDB etc.
 5. Create a local tomcat configuration using your IDE (use artifact CingleVueProject:war exploded for deployment)
 6. Run tomcat configuration
 7. Start MongoDB in default settings (in default port) (you can set mongodb properties in src/main/webapp/resources/database.properties file)
-7. If everything's ok, you can access web application via "localhost:8080/students" in your browser
+8. If everything's ok, you can access web application via "localhost:8080/students" in your browser
+
+You can find technical specification document under "Documents" directory
 
