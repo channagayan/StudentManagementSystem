@@ -2,8 +2,14 @@ package com.channa.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
 /**
- * Created by Chann on 7/18/2015.
+ * The Student class implements Student
+ * object for Student Management system
+ *
+ * @author Channa Somathilaka
+ * @version 1.0
+ * @since 2015-07-17
  */
 @Document
 public class Student {
@@ -20,12 +26,15 @@ public class Student {
     public String getId() {
         return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }

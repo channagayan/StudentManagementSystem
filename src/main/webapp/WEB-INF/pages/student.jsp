@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<h2>Student Name</h2>
+<h2>Details of ${student.name} ${student.lastName}</h2>
 <form action="student/edit" method="post">
     <table border="1">
 
