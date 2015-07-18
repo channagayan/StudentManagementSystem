@@ -13,7 +13,9 @@ var viewStudent = function(id){
             data: "",
             url:  '/student/view?id='+id,
             success: function (response) {
+                if(response){
                 $('#viewStudent').html(response);
+                }
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 alert(jqXHR.status + ' ' + jqXHR.responseText);
@@ -22,8 +24,4 @@ var viewStudent = function(id){
 
 };
 
-var setStudentPage = function(result){
-    $('#viewStudent').css('display','block');
-    $('#viewStudent').dialog();
-};
 
