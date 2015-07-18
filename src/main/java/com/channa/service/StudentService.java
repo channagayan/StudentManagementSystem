@@ -38,8 +38,7 @@ public class StudentService {
     }
 
     public void editStudent(Student student) {
-
-       // mongoTemplate.remove(student, COLLECTION_NAME);
+        mongoTemplate.save(student,COLLECTION_NAME);
     }
 
 

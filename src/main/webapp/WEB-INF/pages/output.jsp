@@ -11,6 +11,7 @@
 <head>
     <script src="<c:url value="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" />"></script>
     <script src="<c:url value="/resources/js/main.js" />"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 
 </head>
@@ -69,11 +70,12 @@
     <c:forEach var="person" items="${studentList}">
         <tr>
             <td>${person.name}</td>
-                <td><input type="button" value="view" onclick="window.location='student/view?id=${student.id}'"/></td>
-                <td><input type="button" value="delete" onclick="window.location='student/delete?id=${student.id}'"/></td>
-                <td><input type="button" value="edit" onclick="window.location='student/edit?id=${student.id}'"/></td>
+                <td><input type="button" value="view" onclick="viewStudent('${person.id}');" id="view"/></td>
+                <td><input type="button" value="delete" onclick="window.location='student/delete?id=${person.id}'"/></td>
+                <td><input type="button" value="edit" onclick="viewStudent('${person.id}');" id="edit"/></td>
         </tr>
     </c:forEach>
 </table>
+<div id="viewStudent"></div>
 </body>
 </html>

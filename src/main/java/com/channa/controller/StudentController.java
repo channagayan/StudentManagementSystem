@@ -9,6 +9,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.view.RedirectView;
 /**
@@ -42,16 +43,17 @@ public class StudentController {
         return new RedirectView("/cinglevue/students");
     }
 
-    @RequestMapping(value = "/student/edit", method = RequestMethod.GET)
+    @RequestMapping(value = "/student/edit", method = RequestMethod.POST)
     public View editStudent(@ModelAttribute Student person, ModelMap model) {
         studentService.editStudent(person);
         return new RedirectView("/cinglevue/students");
     }
 
     @RequestMapping(value = "/student/view", method = RequestMethod.GET)
-    public void viewStudent(@ModelAttribute Student student, ModelMap model) {
-        studentService.getStudent(student.getId());
-        //return new RedirectView("/cinglevue/students");
+    public String viewStudent(@RequestParam("id") String id, ModelMap model) {
+        model.addAttribute("student", studentService.getStudent(id));
+        return  "/student";
     }
+
 }
 
