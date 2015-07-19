@@ -13,6 +13,7 @@
 </head>
 <body>
 <h2>Details of ${student.name} ${student.lastName}</h2>
+
 <form action="student/edit" method="post">
     <table border="1">
 
@@ -21,13 +22,13 @@
         <tr>
             <td>
                 <label for="name">Person Name</label>
-                <input type="text" id="name" name="name" value="${student.name}"/>
+                <input type="text" id="name" name="name" value="${student.name}" class="right"/>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" value="${student.lastName}"/>
+                <input type="text" id="lastName" name="lastName" value="${student.lastName}" class="right"/>
             </td>
         </tr>
         </td>
@@ -35,25 +36,25 @@
         <tr>
             <td>
                 <label for="age">Age</label>
-                <input type="text" id="age" name="age" value="${student.age}"/>
+                <input type="text" id="age" name="age" value="${student.age}" class="right"/>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="department">Department</label>
-                <input type="text" id="department" name="department" value="${student.department}"/>
+                <input type="text" id="department" name="department" value="${student.department}" class="right"/>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="degree">Degree</label>
-                <input type="text" id="degree" name="degree" value="${student.degree}"/>
+                <input type="text" id="degree" name="degree" value="${student.degree}" class="right"/>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="indexNumber">Index Number</label>
-                <input type="text" id="indexNumber" name="indexNumber" value="${student.indexNumber}"/>
+                <input type="text" id="indexNumber" name="indexNumber" value="${student.indexNumber}" class="right"/>
             </td>
         </tr>
     </table>
